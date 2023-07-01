@@ -14,4 +14,41 @@ async function searchImage(){
 
     const response = await fetch(url)
     const data = await response.json()
+
+    const results = data.results
+
+    if (page === 1) {
+        searchResults.innerHTML = ""
+    }
+
+    results.map((result) =>{
+        const imageWrapper = document.createElement('div')
+        imageWrapper.classList.add("search-result")
+        const image = document.createElement('img')
+        image.src = result.url.small
+        image.alt = result.alt_description
+        const imageLink = document.createElement('a')
+        imageLink.href = result.link.html
+        imageLink.target = "_blank"
+        imageLink.textContent = result.alt_description
+    })
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
