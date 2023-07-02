@@ -4,14 +4,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-    font-family: "Ysabeau Infant", sans-serif;
+  font-family: "Ysabeau Infant", sans-serif;
 }
 
-body{
+body {
   line-height: 1.6;
 }
 
-h1{
+h1 {
   font-size: 5vh;
   font-weight: bold;
   text-align: center;
@@ -25,7 +25,7 @@ form {
   margin-bottom: 10vh;
 }
 
-#search-input{
+#search-input {
   width: 60%;
   max-width: 400px;
   padding: 10px 20px;
@@ -36,7 +36,7 @@ form {
   color: #333;
 }
 
-#search-input-button{
+#search-input-button {
   padding: 10px 20px;
   background-color: #96457899;
   color: rgba(0, 2, 3, 0.533);
@@ -48,23 +48,52 @@ form {
   border-radius: 5px;
   margin-left: 10px;
 }
-.search-results{
+.search-results {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
 }
-.search-result{
+.search-result {
   margin-bottom: 60px;
   width: 20%;
   height: 100%;
   border-radius: 5px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-overflow: hidden;
+  overflow: hidden;
 }
 
 .search-result img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  transition-delay: 0.2s ease-in-out;
+}
+
+.search-result:hover img {
+  opacity: 0.8;
+}
+
+.search-result a{
+  font-size: 20px;
+  text-decoration: none;
+  color: #566;
+  display: block;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+#show-more-button{
+  background-color: #008453;
+  font-size: 20px;
+  border: none;
+  color: aliceblue;
+  padding: 10px 30px;
+  text-align: center;
+  display: block;
+  margin: 30px auto;
+  border-radius: 5px;
+  cursor: pointer;
+  /* display: none; */
 }
