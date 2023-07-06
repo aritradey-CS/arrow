@@ -4,8 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Poppins", sans-serif; */
-  font-family: "Ysabeau Infant", sans-serif;
+    font-family: "Ysabeau Infant", sans-serif;
 }
 
 body{
@@ -35,4 +34,17 @@ form {
   border-radius: 5px;
   font-size: 18px;
   color: #333;
+}
+
+#search-input-button{
+  padding: 10px 20px;
+  background-color: #96457899;
+  color: rgba(0, 2, 3, 0.533);
+  border: none;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
 }
