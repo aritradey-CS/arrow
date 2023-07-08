@@ -19,6 +19,7 @@ async function searchImage() {
 
   if (page === 1) {
     searchResults.innerHTML = "";
+    showMore.style.display = "none";
   }
 
   results.map((result) => {
